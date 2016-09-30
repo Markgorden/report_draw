@@ -1,0 +1,151 @@
+//Microsoft Developer Studio generated resource script.
+//
+
+// You'll have to edit this rc file manually because of
+// the relationship with UMResources.h (rather resource.h)
+// and the fact that this is a secondary resource file.
+
+#ifdef APSTUDIO_INVOKED
+//	#error this file is not editable by App Studio
+#endif //APSTUDIO_INVOKED
+
+#include "undo manager\UMResources.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "UMResources.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TYPING_ACTION       "Typing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CUT_ACTION          "Cut"
+    IDS_PASTE_ACTION        "Paste"
+    IDS_PASTESPECIAL_ACTION "Paste Special"
+    IDS_CLEAR_ACTION        "Clear"
+    IDS_DELETE_ACTION       "Delete"
+    IDS_REPLACE_ACTION      "Replace"
+	IDS_REPLACEALL_ACTION   "Replace All"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STYLECHANGE_ACTION  "Style Change"
+    IDS_BOLD_ACTION         "Bold"
+    IDS_ITALICS_ACTION      "Italics"
+    IDS_UNDERLINE_ACTION    "Underline"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COLORCHANGE_ACTION  "Color Change"
+    IDS_DEFAULTCOLOR_ACTION "Default Color"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SIZECHANGE_ACTION   "Size Change"
+    IDS_JUSTIFICATION_ACTION "Justification"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LEFTJUSTIFICATION_ACTION "Left Justification"
+    IDS_CENTERJUSTIFICATION_ACTION "Center Justification"
+    IDS_RIGHTJUSTIFICATION_ACTION "Right Justification"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BULLETS_ACTION      "Bullets"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FORMATTING_ACTION   "Formatting"
+    IDS_FONTFORMATTING_ACTION "Font Formatting"
+    IDS_PARAGRAPHFORMATTING_ACTION "Paragraph Formatting"
+    IDS_TABSFORMATTING_ACTION "Tabs Formatting"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DATETIME_ACTION     "Date/Time"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INSERTOBJECT_ACTION "Object Insertion"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MOVE_ACTION         "Move"
+    IDS_DUPLICATE_ACTION    "Duplicate"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

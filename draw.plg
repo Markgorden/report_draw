@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Draw - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ZHANGX~1\LOCALS~1\Temp\RSP345.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/draw.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\VoIP\_Source\Whiteboard\jt2draw\draw\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ZHANGX~1\LOCALS~1\Temp\RSP345.tmp" 
+Creating temporary file "C:\DOCUME~1\ZHANGX~1\LOCALS~1\Temp\RSP346.tmp" with contents
+[
+gdiplus.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/draw.pdb" /debug /machine:I386 /out:"Debug/draw.exe" /pdbtype:sept 
+.\Debug\Action.obj
+.\Debug\ArrowPicker.obj
+.\Debug\ArrowWnd.obj
+.\Debug\BEZIER.OBJ
+.\Debug\ChildFrm.obj
+.\Debug\CntrItem.obj
+.\Debug\COLORLIS.OBJ
+.\Debug\ColourPicker.obj
+.\Debug\ColourPopupWnd.obj
+.\Debug\Draw.obj
+.\Debug\DRAWDOC.OBJ
+.\Debug\DRAWOBJ.OBJ
+.\Debug\DrawProperty.obj
+.\Debug\DRAWTOOL.OBJ
+.\Debug\EFFECTDLG.OBJ
+.\Debug\FillGradientDlg.obj
+.\Debug\FillPatternDlg.obj
+.\Debug\FillPictureDlg.obj
+.\Debug\formatba.obj
+.\Debug\HatchWellWnd.obj
+.\Debug\HyperLink.obj
+.\Debug\IpFrame.obj
+.\Debug\LINE.OBJ
+.\Debug\LinePicker.obj
+.\Debug\LineProperty.obj
+.\Debug\LineWnd.obj
+.\Debug\Maction.obj
+.\Debug\MainFrm.obj
+.\Debug\MyTabCtrl.obj
+.\Debug\NetworkView.obj
+.\Debug\StdAfx.obj
+.\Debug\TextFormatPage.obj
+.\Debug\TextProperty.obj
+.\Debug\UndoManager.obj
+.\Debug\Zoomview.obj
+.\Debug\Draw.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ZHANGX~1\LOCALS~1\Temp\RSP346.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+draw.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

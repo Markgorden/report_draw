@@ -1,0 +1,1492 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""UndoManager.rc"" \r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Draw.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#include ""afxolesv.rc""       // OLE server resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ico00002.ico"
+IDR_NETWORK             ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DRAWTYPE_CNTR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+ID_POPUP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM "Proper&ties...\tAlt+Enter",   ID_EDIT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Object",                ID_OLE_VERB_FIRST
+    END
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+    END
+END
+
+IDR_NETWORK MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "Redo",                        ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Search",                      ID_EDIT_SEARCH
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM "&Select",                     ID_DRAW_SELECT
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "Proper&ties...\tAlt+Enter",   ID_EDIT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "&Edit Object",                ID_OLE_VERB_FIRST
+        MENUITEM SEPARATOR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Grid Lines\tG",              ID_VIEW_GRID
+        MENUITEM "&Paper Color...",             ID_VIEW_PAPERCOLOR
+        MENUITEM "&Objects Border",             ID_VIEW_SHOWOBJECTS
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+        POPUP "Zoom"
+        BEGIN
+            MENUITEM "100%",                        ID_VIEW_ZOOM_100
+        END
+    END
+    POPUP "&Insert"
+    BEGIN
+        POPUP "Add &Shapes"
+        BEGIN
+            MENUITEM "&Rectangle",                  ID_DRAW_RECT
+            MENUITEM "&Ellipse",                    ID_DRAW_ELLIPSE
+            MENUITEM "R&ound Rectangle",            ID_DRAW_ROUNDRECT
+            MENUITEM "&Line",                       ID_DRAW_LINE
+            MENUITEM "&Arrow",                      ID_DRAW_ARROW
+            MENUITEM "&Polygon",                    ID_DRAW_POLYGON
+            MENUITEM "&Text",                       ID_DRAW_TEXT
+        END
+        MENUITEM "Add Pa&ge",                   ID_ADD_PAGE
+        MENUITEM "&Delete Page",                ID_REMOVE_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Insert New Object...",       ID_OLE_INSERT_NEW
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&About MeLab...",             ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_TOOLBAR MENU DISCARDABLE 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Standard",                   ID_VIEW_TOOLBAR
+        MENUITEM "&Network",                    ID_VIEW_BUILD_TOOLBAR
+        MENUITEM "&Format",                     ID_VIEW_FORMAT_TOOLBAR
+        MENUITEM "Flux",                        ID_VIEW_FLUX_TOOLBAR
+        MENUITEM "Pathway",                     ID_VIEW_PATHWAY_TOOLBAR
+        MENUITEM "S&imulation",                 ID_VIEW_SIMULATION
+        MENUITEM SEPARATOR
+        MENUITEM "&Output",                     ID_VIEW_OUTPUT
+        MENUITEM "W&atch",                      ID_VIEW_WATCH
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR1
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR2
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR3
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR4
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR5
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR6
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR7
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR8
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR9
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR10
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Project"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Line",                       ID_DRAW_LINE
+        MENUITEM "&Rectangle",                  ID_DRAW_RECT
+        MENUITEM "R&ound Rectangle",            ID_DRAW_ROUNDRECT
+        MENUITEM "&Ellipse",                    ID_DRAW_ELLIPSE
+        MENUITEM "&Polygon",                    ID_DRAW_POLYGON
+        MENUITEM "&Arrow",                      ID_DRAW_ARROW
+        MENUITEM "&Text",                       ID_DRAW_TEXT
+    END
+    POPUP "&Object"
+    BEGIN
+        MENUITEM "Line Color",                  ID_OBJECT_LINECOLOR
+        MENUITEM "Fill Color",                  ID_OBJECT_FILLCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "Move To Front\tCtrl+Plus",    ID_OBJECT_MOVETOFRONT
+        MENUITEM "Move To Back\tCtrl+Minus",    ID_OBJECT_MOVETOBACK
+        MENUITEM "Move Forward\tPlus",          ID_OBJECT_MOVEFORWARD
+        MENUITEM "Move Back\tMinus",            ID_OBJECT_MOVEBACK
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "COLOR_POPUP"
+    BEGIN
+        MENUITEM "1 pt",                        ID_LINEWIDTH0
+        MENUITEM "2 pt",                        ID_LINEWIDTH1
+        MENUITEM "3 pt",                        ID_LINEWIDTH2
+        MENUITEM "4 pt",                        ID_LINEWIDTH3
+        MENUITEM "5 pt",                        ID_LINEWIDTH4
+        MENUITEM "6 pt",                        ID_LINEWIDTH5
+        MENUITEM "7 pt",                        ID_LINEWIDTH6
+        MENUITEM "8 pt",                        ID_LINEWIDTH7
+        MENUITEM "9 pt",                        ID_LINEWIDTH8
+    END
+    POPUP "LINESTYLE POPUP"
+    BEGIN
+        MENUITEM "1",                           ID_LINESTYLE0
+        MENUITEM "2",                           ID_LINESTYLE1
+        MENUITEM "3",                           ID_LINESTYLE2
+        MENUITEM "4",                           ID_LINESTYLE3
+        MENUITEM "5",                           ID_LINESTYLE4
+    END
+    POPUP "LEFT ARROW POPUP"
+    BEGIN
+        MENUITEM "1",                           ID_LEFTARROW0
+        MENUITEM "2",                           ID_LEFTARROW1
+        MENUITEM "3",                           ID_LEFTARROW2
+        MENUITEM "4",                           ID_LEFTARROW3
+        MENUITEM "5",                           ID_LEFTARROW4
+        MENUITEM "6",                           ID_LEFTARROW5
+    END
+    POPUP "RIGHT ARROW POPUP"
+    BEGIN
+        MENUITEM "1",                           ID_RIGHTARROW0
+        MENUITEM "2",                           ID_RIGHTARROW1
+        MENUITEM "3",                           ID_RIGHTARROW2
+        MENUITEM "4",                           ID_RIGHTARROW3
+        MENUITEM "5",                           ID_RIGHTARROW4
+        MENUITEM "6",                           ID_RIGHTARROW5
+    END
+END
+
+IDR_DRAWCLTYPE_CNTR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+IDR_DRAWTYPE_SRVR_EMB MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Update\tCtrl+S",             ID_FILE_UPDATE
+        MENUITEM "Save Copy &As...",            ID_FILE_SAVE_COPY_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Draw...",              ID_APP_ABOUT
+    END
+END
+
+IDR_DRAWTYPE_SRVR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Draw...",              ID_APP_ABOUT
+    END
+END
+
+IDR_UNDO MENU DISCARDABLE 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Undo1",                      ID_EDIT_UNDO1
+        MENUITEM "&Undo2",                      ID_EDIT_UNDO2
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_DRAWTYPE_CNTR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+IDR_DRAWTYPE_SRVR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,    VIRTKEY, NOINVERT
+END
+
+IDR_DRAWTYPE_SRVR_EMB ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_UPDATE,         VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+IDR_NETWORK ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT,         VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      ID_EDIT_PROPERTIES,     VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LINE DIALOGEX 0, 0, 261, 163
+STYLE DS_CONTEXTHELP | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Line / Border"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_LINE_COLOR,55,66,55,12
+    CONTROL         "",IDC_LINEPICKER,"Button",BS_OWNERDRAW | WS_TABSTOP,180,
+                    66,55,12
+    EDITTEXT        IDC_LINE_SIZE,55,83,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,111,85,8,10
+    CONTROL         "Round Pen",IDC_ROUND_PEN,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,199,75,59,10
+    PUSHBUTTON      "",IDC_FILL_COLOR,99,17,69,12
+    PUSHBUTTON      "",IDC_ARROW_START,55,114,55,12
+    PUSHBUTTON      "",IDC_ARROW_END,180,114,55,12
+    EDITTEXT        IDC_ARROW_START_SIZE,55,130,55,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,113,131,8,10
+    EDITTEXT        IDC_ARROW_END_SIZE,180,130,55,12,ES_AUTOHSCROLL
+    CONTROL         "Spin3",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,226,131,8,10
+    LTEXT           "Dash Style:",IDC_STATIC,141,67,39,8
+    LTEXT           "Color:",IDC_STATIC,13,67,21,8
+    LTEXT           "Size:",IDC_STATIC,13,84,18,8
+    LTEXT           "Color:",IDC_STATIC,15,19,21,8
+    LTEXT           "Fill",IDC_STATIC,9,5,11,8
+    LTEXT           "Line",IDC_STATIC,8,54,15,8
+    LTEXT           "Arrow ",IDC_STATIC,8,101,21,8,WS_DISABLED
+    LTEXT           "End Style:",IDC_STATIC,140,119,34,11
+    LTEXT           "Begin Style:",IDC_STATIC,13,115,41,11
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,20,8,238,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,27,58,231,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,31,105,227,1
+    LTEXT           "Begin Size:",IDC_STATIC,13,131,39,10
+    LTEXT           "End Size:",IDC_STATIC,140,132,32,10
+    CONTROL         "No Fill",IDC_NOFILL,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,171,28,33,8
+    CONTROL         "Linear Gradient",IDC_FILLLINEAR,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,172,15,86,8,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Nonlinear Gradient",IDC_FILLNOLINEAR,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,169,5,89,8
+    CONTROL         "Fill even",IDC_FILLEVEN,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,217,28,41,8
+    LTEXT           "Cap Style:",IDC_STATIC,142,84,34,8
+    COMBOBOX        IDC_COMBO1,180,83,55,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLLBAR1,99,38,69,12,WS_GROUP
+    EDITTEXT        IDC_EDIT1,181,38,35,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,217,39,8,
+                    12
+    LTEXT           "Transparency:",IDC_STATIC,15,40,49,12
+END
+
+IDD_TEXT DIALOG DISCARDABLE  0, 0, 255, 163
+STYLE DS_CONTEXTHELP | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Text"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_TEXT_INPUT,2,1,252,157,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 266, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MetaboLogic"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MetaboLogic Version 1.0",IDC_VERSION,42,18,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000-2002 Tao Zhu, Chan Phalakornkule",
+                    IDC_STATIC,41,32,198,8
+    DEFPUSHBUTTON   "OK",IDOK,145,156,69,20,WS_GROUP
+    GROUPBOX        "Thanks to",IDC_STATIC,38,52,203,92
+    LTEXT           "Please visit MetaboLogic homepage",IDC_WWW,28,155,136,
+                    10
+    LTEXT           "Comment : tazst6@pitt.edu",IDC_EMAIL,28,165,142,9
+    LISTBOX         IDC_FRIENDS,41,63,196,76,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TEXT_FORMAT DIALOGEX 0, 0, 248, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Format"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_LINE_COLOR,45,69,64,15
+    PUSHBUTTON      "",IDC_LINEPICKER,169,69,64,15
+    EDITTEXT        IDC_LINE_SIZE,45,90,64,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,111,91,11,12
+    CONTROL         "Round Pen",IDC_ROUND_PEN,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,141,90,64,15
+    PUSHBUTTON      "",IDC_FILL_COLOR,93,18,64,15
+    CONTROL         "Default for new object",IDC_SET_DEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,168,115,11
+    LTEXT           "Style:",IDC_STATIC,139,72,21,10
+    LTEXT           "Color:",IDC_STATIC,16,75,21,10
+    LTEXT           "Size:",IDC_STATIC,16,94,19,10
+    LTEXT           "Color:",IDC_STATIC,16,22,21,10
+    LTEXT           "Fill",IDC_STATIC,7,11,15,10
+    LTEXT           "Line",IDC_STATIC,7,59,20,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,26,14,218,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,24,62,220,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,28,114,216,1
+    CONTROL         "No Fill",IDC_NOFILL,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,138,148,44,10
+    CONTROL         "Linear Gradient",IDC_FILLLINEAR,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,148,159,77,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Nonlinear Gradient",IDC_FILLNOLINEAR,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,145,169,80,10
+    CONTROL         "Fill even",IDC_FILLEVEN,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,186,148,39,10
+    LTEXT           "Text:",IDC_STATIC,6,109,17,8
+    COMBOBOX        IDC_TEXT_ALLIGNMENT,168,126,64,50,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Alignment:",IDC_STATIC,127,128,33,10
+    LTEXT           "Border",IDC_STATIC,16,129,22,10
+    COMBOBOX        IDC_BORDER,45,126,64,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    SCROLLBAR       IDC_SCROLLBAR1,93,42,64,11,WS_GROUP
+    EDITTEXT        IDC_EDIT1,171,42,47,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,220,40,11,15
+    LTEXT           "Transparency:",IDC_STATIC,7,42,65,15
+END
+
+IDD_FILL_GRADIENT DIALOG DISCARDABLE  0, 0, 200, 224
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Colors",IDC_STATIC,7,5,186,64
+    CONTROL         "O&ne color",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,15,23,71,11
+    CONTROL         "&Two colors",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,35,71,11
+    SCROLLBAR       IDC_SCROLLBAR1,41,87,78,12,WS_GROUP
+    EDITTEXT        IDC_EDIT1,139,87,46,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,181,87,12,
+                    14
+    SCROLLBAR       IDC_SCROLLBAR2,41,107,78,12,WS_GROUP
+    EDITTEXT        IDC_EDIT2,139,108,46,13,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,181,109,
+                    12,12
+    CONTROL         "Hori&zontal",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,13,146,77,11
+    CONTROL         "&Vertical",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,158,77,11
+    CONTROL         "Diagonal &up",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,170,77,11
+    CONTROL         "Diagonal &down",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,182,77,11
+    CONTROL         "&From corner",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,194,77,11
+    CONTROL         "Fro&m center",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,206,77,11
+    PUSHBUTTON      "",IDC_BUTTON2,120,20,64,12,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON8,120,38,64,12,NOT WS_VISIBLE
+    GROUPBOX        "Transparency",IDC_STATIC,7,73,186,53
+    GROUPBOX        "Shading style",IDC_STATIC,7,132,92,89
+    GROUPBOX        "Sample:",IDC_STATIC,101,131,92,90
+    LTEXT           "F&rom:",IDC_STATIC,15,89,18,8
+    LTEXT           "T&o:",IDC_STATIC,16,107,12,8
+    SCROLLBAR       IDC_SCROLLBAR4,120,39,64,12,NOT WS_VISIBLE | WS_TABSTOP
+    LTEXT           "Dark",IDC_STATIC1,120,53,16,8,NOT WS_VISIBLE
+    LTEXT           "Light",IDC_STATIC2,169,53,16,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_SAMPLE,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,109,146,76,66
+END
+
+IDD_FILL_PATTERN DIALOGEX 0, 0, 203, 230
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Pattern:",IDC_STATIC,7,4,26,8
+    CTEXT           "",IDC_STATICNAME,7,133,189,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Foreground:",IDC_STATIC,7,155,68,8
+    LTEXT           "Background",IDC_STATIC,7,192,68,8
+    PUSHBUTTON      "",IDC_BUTTON1,7,167,72,15
+    PUSHBUTTON      "",IDC_BUTTON2,7,203,72,15
+    GROUPBOX        "Sample:",IDC_STATIC,101,150,85,78
+    CONTROL         "",IDC_BUTTON4,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,107,162,73,59
+    CONTROL         "",IDC_BUTTON3,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,7,14,189,112
+END
+
+IDD_FILL_PICTURE DIALOGEX 0, 0, 202, 211
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Picture:",IDC_STATIC,7,7,25,8
+    CTEXT           "",IDC_STATICNAME,7,121,188,15,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Select Picture...",IDC_BUTTON1,119,144,76,14
+    COMBOBOX        IDC_COMBO1,119,163,76,97,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_BUTTON2,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_DISABLED,7,16,188,97
+    CONTROL         "Button3",IDC_BUTTON3,"Button",BS_OWNERDRAW | 
+                    WS_DISABLED | WS_TABSTOP,33,150,58,46
+END
+
+IDD_FILL_DLG DIALOG DISCARDABLE  0, 0, 269, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Effect"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,222,21,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,222,39,40,14
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,207,257
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MetaboLogic MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MetaboLogic\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MetaboLogic.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MetaboLogic Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_NETWORK             BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDB_CLASS_VIEW          BITMAP  DISCARDABLE     "res\\classview.bmp"
+IDB_FILE_VIEW           BITMAP  DISCARDABLE     "res\\fileview.bmp"
+IDB_RESOURCE_VIEW       BITMAP  DISCARDABLE     "res\\resource.bmp"
+IDB_WORKSPACE           BITMAP  DISCARDABLE     "res\\workspc.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_FORMAT_TOOLBAR      BITMAP  DISCARDABLE     "res\\format_t.bmp"
+IDB_ARROWS              BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_IMAGES              BITMAP  DISCARDABLE     "res\\smallico.bmp"
+IDB_FONTTYPE            BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_B2                  BITMAP  DISCARDABLE     "res\\b2.bmp"
+IDR_DRAWTYPE_SRVR_IP    BITMAP  MOVEABLE PURE   "res\\IToolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_NETWORK TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_DRAW_SELECT
+    SEPARATOR
+    BUTTON      ID_DRAW_SCRIBBLE
+    BUTTON      ID_DRAW_RECT
+    BUTTON      ID_DRAW_ELLIPSE
+    BUTTON      ID_DRAW_ROUNDRECT
+    BUTTON      ID_DRAW_LINE
+    BUTTON      ID_DRAW_ARROW
+    BUTTON      ID_DRAW_POLYGON
+    BUTTON      ID_DRAW_CURVE
+    BUTTON      ID_DRAW_CLOSEDCURVE
+    BUTTON      ID_DRAW_TEXT
+END
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_ZOOM_IN
+    BUTTON      ID_ZOOM_OUT
+    BUTTON      ID_ZOOM_FULL
+END
+
+IDR_FORMAT_TOOLBAR TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDC_FONTNAME
+    SEPARATOR
+    BUTTON      IDC_FONTSIZE
+    SEPARATOR
+    BUTTON      ID_CHAR_COLOR
+    BUTTON      ID_LINE_COLOR
+    BUTTON      ID_FILL_COLOR
+    BUTTON      ID_OBJECT_MOVETOFRONT
+    BUTTON      ID_OBJECT_MOVETOBACK
+    BUTTON      ID_OBJECT_MOVEFORWARD
+    BUTTON      ID_OBJECT_MOVEBACK
+    BUTTON      ID_LINE_WIDTH
+    BUTTON      ID_LINE_STYPE
+    BUTTON      ID_LEFTARROW_STYLE
+    BUTTON      ID_RIGHTARROW_STYLE
+END
+
+IDR_DRAWTYPE_SRVR_IP TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PENCIL              CURSOR  DISCARDABLE     "res\\Pencil.cur"
+IDC_ZOOMCURSOR          CURSOR  DISCARDABLE     "res\\cur00001.cur"
+IDC_ZOOMCURSOR1         CURSOR  DISCARDABLE     "res\\cur00002.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LINE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 258
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_TEXT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 255
+        TOPMARGIN, 10
+    END
+
+    IDD_TEXT_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_FILL_GRADIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_FILL_PATTERN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_FILL_PICTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_FILL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TEXT_FORMAT DLGINIT
+BEGIN
+    IDC_TEXT_ALLIGNMENT, 0x403, 5, 0
+0x654c, 0x7466, "\000" 
+    IDC_TEXT_ALLIGNMENT, 0x403, 7, 0
+0x6543, 0x746e, 0x7265, "\000" 
+    IDC_TEXT_ALLIGNMENT, 0x403, 6, 0
+0x6952, 0x6867, 0x0074, 
+    IDC_BORDER, 0x403, 10, 0
+0x6552, 0x7463, 0x6e61, 0x6c67, 0x0065, 
+    IDC_BORDER, 0x403, 16, 0
+0x6f52, 0x6e75, 0x2064, 0x6552, 0x7463, 0x6e61, 0x6c67, 0x0065, 
+    IDC_BORDER, 0x403, 8, 0
+0x6c45, 0x696c, 0x7370, 0x0065, 
+    IDC_BORDER, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    0
+END
+
+IDD_FILL_PICTURE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x6954, 0x656c, "\000" 
+    IDC_COMBO1, 0x403, 18, 0
+0x6c46, 0x7069, 0x4820, 0x726f, 0x7a69, 0x6e6f, 0x6174, 0x6c6c, 0x0079, 
+
+    IDC_COMBO1, 0x403, 16, 0
+0x6c46, 0x7069, 0x5620, 0x7265, 0x6974, 0x6163, 0x6c6c, 0x0079, 
+    IDC_COMBO1, 0x403, 34, 0
+0x6c46, 0x7069, 0x4820, 0x726f, 0x7a69, 0x6e6f, 0x6174, 0x6c6c, 0x2079, 
+0x6e61, 0x2064, 0x6556, 0x7472, 0x6369, 0x6c61, 0x796c, 0x0020, 
+    IDC_COMBO1, 0x403, 7, 0
+0x6543, 0x746e, 0x7265, "\000" 
+    IDC_COMBO1, 0x403, 8, 0
+0x7453, 0x6572, 0x6374, 0x0068, 
+    0
+END
+
+IDD_LINE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0x6c46, 0x7461, 0x4520, 0x646e, "\000" 
+    IDC_COMBO1, 0x403, 10, 0
+0x6f52, 0x6e75, 0x2064, 0x6e45, 0x0064, 
+    IDC_COMBO1, 0x403, 13, 0
+0x7254, 0x6169, 0x676e, 0x656c, 0x4520, 0x646e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+    IDS_MAIN_TOOLBAR        "Standard"
+    IDS_BUILD_TOOLBAR       "Network"
+    IDS_SIMULATION_TOOLBAR  "Simulation"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Draw"
+    IDR_DRAWTYPE            "\nDraw\nDraw\n\n\nDraw.Document\nDraw Document"
+    IDR_FORMAT_TOOLBAR      "Format"
+    IDR_NETWORK             "\nDraw\nDraw Network View\nDraw Files (*.drw)\n.drw\nDraw.Document\nDraw Document\nDRAW\nDraw Files"
+    IDS_INVALID_NUMBER      "This is not a valid number."
+    IDS_INVALID_FONTSIZE    "The number must be between 1 and 1638."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MetaboLogic"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_UPDATE          "Update the container to show any changes\nUpdate"
+    ID_FILE_SAVE_COPY_AS    "Save a copy of the active document with a new name\nSave Copy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_FORMAT_TOOLBAR  "toolbar formatting the network chart\nFormat ToolBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    ID_COLOR_TEAROFF        "<Color TearOff ID>"
+    IDS_HEADLINE_NMR        "% Matlab code produced by MetaboLogic program automatically. For NMR Simulation\r\n%v is the vector of flux. In the network of n reactions. The demension of v is n+m, \r\n%where m is the number of reversible reaction\r\n%Copyright to Draw(R) 2001. tazst6@pitt.edu\r\n"
+    IDS_HEADLINE2           "% Matlab code produced by MetaboLogic program automatically. For linear programing\r\n%U is stoichiometric coeffecient matrix \r\n%Only the selected constraints are collected into the final Aeq, and Aneq in the lp function.\r\n%Copyright to Draw(R) 2001. tazst6@pitt.edu\r\n"
+    IDS_HEADLINE0           "% Matlab code produced by MetaboLogic program automatically. For flux caulation\r\n%U is stoichiometric coeffecient matrix \r\n%Only the selected constraints are collected into the final matrix C. \r\n%Copyright to Draw(R) 2001. tazst6@pitt.edu\r\n"
+    ID_ACTION_ADD_COMMON    "Add an object"
+    ID_ACTION_ADD_REACTION  "Add a reaction"
+    ID_ACTION_ADD_CATALYZE  "Add a catalyzing relation"
+    ID_ACTION_SIZE          "Resize"
+    ID_ACTION_MOVE          "Move"
+    ID_ACTION_ADDPOLY       "Add a polygon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PAGE                 "Page      "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_GRID            "Show or hide gridlines\nToggle Gridlines"
+    ID_DRAW_SELECT          "Select an Object\nSelect"
+    ID_DRAW_LINE            "Draw a line\nLine"
+    ID_DRAW_RECT            "Draw a rectangular\nRect"
+    ID_DRAW_ROUNDRECT       "Draw a round Rect\nRound Rect"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOO_INFO             "Show the information about the system"
+    ID_TOOL_INFO            "Show the information summary of a model\nInformation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LINEWIDTH0           "0 pt"
+    ID_LINEWIDTH1           "1 pt"
+    ID_LINEWIDTH2           "2 pt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LINEWIDTH3           "3 pt"
+    ID_LINEWIDTH4           "4 pt"
+    ID_LINEWIDTH5           "5 pt"
+    ID_LINEWIDTH6           "6 pt"
+    ID_LINEWIDTH7           "7 pt"
+    ID_LINEWIDTH8           "8 pt"
+    ID_LINESTYLE0           " "
+    ID_LINESTYLE1           " "
+    ID_LINESTYLE2           " "
+    ID_LINESTYLE3           " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LINESTYLE4           " "
+    ID_LINESTYLE5           " "
+    ID_LINESTYLE6           " "
+    ID_LINESTYLE7           " "
+    ID_LINESTYLE8           " "
+    ID_LEFTARROW0           " "
+    ID_LEFTARROW1           " "
+    ID_LEFTARROW2           " "
+    ID_LEFTARROW3           " "
+    ID_LEFTARROW4           " "
+    ID_LEFTARROW5           " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RIGHTARROW0          " "
+    ID_RIGHTARROW1          " "
+    ID_RIGHTARROW2          " "
+    ID_RIGHTARROW3          " "
+    ID_RIGHTARROW4          " "
+    ID_RIGHTARROW5          " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_PAPERCOLOR      "Change the color of background"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DRAW_ELLIPSE         "Draw a ellcipse\nEllipse"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DRAW_POLYGON         "Draw a ploygon\nPolygon"
+    ID_VIEW_OUTPUT          "Show outpout\nOutput"
+    ID_TOOL_BUILD           "Build the model\nBuild"
+    ID_SUMULATION_RUN       "Run the MatLab Code\nRun"
+    ID_DRAW_ARROW           "Draw a arrow\nArrow"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SIMULATION_MFC       "Metabolic Control Analysis\nMCA"
+    ID_VIEW_BUILD_TOOLBAR   "Network construction toolbar\nConstruction tools"
+    IDC_FLUX                "Calculate the flux distribution at steady state"
+    ID_TOOL_MCA             "Metabolic control analysis\nMCA"
+    IDS_DUMMY_UNDO_ACTION   "Select a Object\nSelect"
+    IDC_ADD_REACTANT        "Add a reactant\nReactant"
+    IDC_ADD_REACTION        "Add a reaction\nReaction"
+    IDC_ADD_REGULATION      "Add a regulation\nRegulation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUILD_DUMP           "Dump the contents of document, only for the debug version\\Dump"
+    ID_TOOL_FLUXOPTIMIZATION 
+                            "Find optimized flux distribution by linear programming using GAMS\nLinear Programming"
+    ID_TOOL_EZYMEPROFILEOPTIMIZATION 
+                            "parameter optimization based on kinetic simulation\nParameter optimization"
+    ID_TOOL_TOPLOGICALANALYISIS 
+                            "Analyze the structure of stoichiometric model\nTopological Analysis"
+    ID_TOOL_FLUX            "Check /Calculate the balance of stoichiometric model\nFlux Analysis"
+    ID_TOOL_SIMULATE        "Simulate the kinetic\nSimulation on Kinetic"
+    ID_VIEW_CUSTOMIZE       "Customize your toolbar setting\nCustomize"
+    ID_VIEW_WORKSPACE       "Show workspace\nWorkspace"
+    ID_ZOOM_IN              "Zoom in\nZoom in"
+    ID_ZOOM_OUT             "Zoom Out\nZoom out"
+    ID_ZOOM_FULL            "Fit all the document in a window\nZoom fit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CHAR_COLOR           "Choose the color of text\nText Color"
+    ID_FILL_COLOR           "Change fill color\nFill Color"
+    ID_LINE_COLOR           "Change Line Color\nLine Color"
+    ID_LEFTARROW_STYLE      "Choose the arrow style for the left end\nLeft end arrow"
+    ID_DRAW_TEXT            "Draw a text\nText"
+    ID_ADD_REACTANT         "Add a reactant to the system\nReactant"
+    ID_ADD_REACTION         "Add a reaction to the system\nReaction"
+    ID_ADD_VARIABLE         "Add system varibles for highly structure model only\nAdd Variable "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPTION          "Set up the environment to run this program"
+    ID_VIEW_FLUX            "view the flux of each reaction\nShow/hide flux"
+    ID_TOOL_NMR             "Simulate NMR spectra based on the selected flux seneriao\nNMR simulation"
+    ID_TOOL_CHECK           "Check /Calculate the balance of stoichiometric model"
+    ID_DUMMY_CLEAR          "Clear the current line in the output windows."
+    ID__CLEARALL            "Clear all the contents\nClear All"
+    ID_DUMMY_CLEARALL       "Clear all"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_FONTNAME            "Change font name"
+    IDC_FONTSIZE            "Change font size"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ADD_CONTSTAINT       "Add a user constaint at the end of table"
+    ID_DELETE_CONSTRAINT    "Delete current constraint"
+    ID_TOOL_FLUXOPTIMIZATION_ONESOLUTION 
+                            "Using Linear/Nonlinear Programming to find solution\nLP/NLP"
+    ID_TOOL_FLUXOPTIMIZATION_ALLSOLUTION 
+                            "Mixed Integer to find all optima scenarios\nMILP"
+    ID_BUTTON1              "Fill pattern at \\ direction"
+    ID_BUTTON2              "Fill pattern at -- direction"
+    ID_BUTTON3              "Fill pattern at / direction"
+    ID_BUTTON32860          "Fill pattern at  | direction"
+    ID_BUTTON32861          "Set a single 1"
+    ID_BUTTON32862          "Clear the Matrix"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON5              "Clear All\nClear All"
+    ID_MATRIX_OPEN          "Open IMM file\nOpen IMM file"
+    ID_MATRIX_SAVE          "Save IMM file\nSave IMM to file"
+    ID_CLEAR_USER           "Clear all user constraints\n Clear User Constratints"
+    ID_BUILD_CLEARALLIMM    "Clear all IMM (for debug only)"
+    ID_EDIT_RESETFLUXTEXTBOX 
+                            "Reset the position of  flux text box attached to the reaction."
+    ID__COPYALL             "Copy contents of ouput to clipboard"
+    ID_OUTPUT_COPY          "Copy current line to clipborad"
+    ID_OUTPUT_CLEAR         "clear current line"
+    ID_OUTPUT_CLEARALL      "clear all the contents in output window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_WATCH           "Show the reaction/reantant table\nTable"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RIGHTARROW_STYLE     "Choose the arrow style for the right end\nRight end arrow"
+    ID_ADDCONSTANT          "Add a global parameter defination\nAdd parameter"
+    ID_OUTPUT_EDITCODE      "Open the internal code to edit\nEdit internal code"
+    ID_NMR_DESIGN           "Design the labeling substrate for NMR experiment\nLabeling design"
+    ID_NMR_SEARCH           "Search the flux distribution space to find matching NMR spectrum\nSpectra match"
+    ID_SHOW_PATH            "show an elmentary mode (pathway)\nShow Pathway"
+    ID_VIEW_EMPROPERTIES    "Show the basic properties of an elementary mode (pathway)"
+    ID_BUILD_EXPORTEM       "export the elementary mode into a text file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ADDENZYME            "Add an enzyme to the system\nAdd Enzyme"
+    ID_ADD_CATALYZE         "Connect an enzyme to the reaction that it catalyze\nCatalyzation"
+    ID_SIMULATION_MCA       "Calculate the flux control and concentration control coefficient\nMCA"
+    ID_NEXT_PATHWAY         "Show previous pathway\nNext pathway"
+    ID_PREV_PATHWAY         "Show previous pathway\nPrevious pathway"
+    ID_PREV_FLUX            "Show previous flux scenarios\nPrevious flux"
+    ID_NEXT_FLUX            "Show next flux scenarios\nNext flux"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTION_ADD_NODE      "Add a reactant"
+    ID_ACTION_ADD_ENZYME    "Add an Enzyme"
+    ID_ACTION_ADD_BRANCH    "Add a branch to a reaction"
+    ID_ACTION_SIZE_REACTION "Resize a reaction"
+    ID_ACTION_REMOVE_BRANCH "Delete a branch of reaction"
+    ID_ACTION_DELETE_REACTION "Delete whole reaction"
+    ID_ACTION_EDIT          "Editing"
+    ID_ACTION_EDIT_REACTION "Edit reaction"
+    ID_ACTION_MOVE_POSITION "Move position"
+    ID_ACTION_LEFT_ARROW    "change left arrow"
+    ID_ACTION_RIGHT_ARROW   "change right arrow"
+    ID_ACTION_COLOR_LINE    "chang line color"
+    ID_ACTION_COLOR_FILL    "change fill color"
+    ID_ACTION_COLOR_TEXT    "Change text color"
+    ID_ACTION_LINE_SIZE     "Change line width"
+    ID_ACTION_LINE_STYLE    "Change line style"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACTION_FONT          "change font name or size"
+    ID_ACTION_DELETE        "Delete the selections"
+    ID_ACTION_PASTE         "paste"
+    ID_ACTION_EDIT_MULTI    "Change properties of multiple objects"
+    ID_ACTION_FLUX          "Show/hide flux"
+    ID_ACTION_PAGE_ADD      "Add a new page"
+    ID_ACTION_PAGE_DELETE   "Delete page"
+    ID_ACTION_MOVE_ONE      "Move a object by arrows"
+    IDS_HEADLINE_MS         "% Matlab code produced by MetaboLogic program automatically. For MS Simulation\r\n%v is the vector of flux. In the network of n reactions. The demension of v is n+m, \r\n%where m is the number of reversible reaction\r\n%Copyright to Draw(R) 2001. tazst6@pitt.edu\r\n"
+    IDS_DEFAULTFONT         "Times New Roman"
+    ID_ACTION_SIZE_REGULATION "Resize a regulation"
+    ID_ACTION_EDIT_REGULATION "Edit a regulation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUILD_CELLBALANCESHEET 
+                            "stoichiometric coefficients for cell mass \ncell mass balance"
+    ID_BUILD_EXPORT_CONSTRAINTS "Export equality and inequality constraints"
+    ID_DRAW_SCRIBBLE        "Draw a scribble\nscribble"
+    ID_DRAW_CURVE           "Draw a curve\ncurve"
+    ID_WIZARD               "IMM wizard"
+    ID__COPY                "Copy the contents of current grid"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_PATHWAY_TOOLBAR "Topological anlysis tools\nToplogical"
+    ID_VIEW_FLUX_TOOLBAR    "Flux blance anylysis toolbar\nFBA tools"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID__PASTE               "Paste the contents on clipboard to the current grid"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DRAW_CLOSEDCURVE     "Draw closed cuve\nclosed curve"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "UndoManager.rc" 
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

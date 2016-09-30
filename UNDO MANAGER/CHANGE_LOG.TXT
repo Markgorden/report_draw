@@ -1,0 +1,123 @@
+
+Change Log:
+
+1.1:
+		* Added the ability for multiple, simultaneous undo/redo. Previously,
+		  you had to undo/redo multiple items one at time. To implement this,
+		  several aspects of menu enabling have changed. Before, you would
+		  call SimpleUndoRedoMenu::Set() within your UpdateEditUndo() and
+		  UpdateEditRedo() routines. Now, you query the undo manager directly
+		  (the caption, if there is one, will already be present), e.g.,
+
+				void CRicherEditView::OnUpdateEditUndo(CCmdUI* pCmdUI) 
+				{
+					// was: CSimpleUndoRedoMenu::Set(pCmdUI, GetActionTarget());
+					if (gUndoManager->CanUndo(GetActionTarget()))
+						pCmdUI->Enable(TRUE);
+					else
+						pCmdUI->Enable(FALSE);
+				}
+
+		  To support simultaneous undo/redo, several new command ranges
+		  (ID_UNDO_0...ID_UNDO_9, ID_REDO_0...ID_REDO_9) and handlers,
+		  OnMultipleUndo() and OnMultipleRedo().
+
+		  Two new callback routines were added which, in addition to marking
+		  the document dirty or clean as the original callback did, also build
+		  the appropriate menus. The callbacks are
+
+		  UMCmdTargetNotifier   -- original notifier; marks document dirty/clean
+		  UMSimpleMenuBuilder   -- sets caption to "Undo" + action name + accelerator
+		  UMSubmenuBuilder -- creates submenu with up to 10 actions
+
+		  The CRicherEditView and CBetterEditView classes work with all three,
+		  differing in only the amount of feedback given to the user. To achieve
+		  efficient menu rebuilding, menus are generally constructed only when
+		  needed and only when changed. This is unlike using the UpdateXXX()
+		  handlers which (1) update often (e.g., every time you select the item)
+		  and (2) update several times (e.g., the same handler can be invoked for
+		  a tool button and menu item.)
+
+		  One minor change to allow correct menu updating in the context of MDI
+		  is that a "NULL" action (i.e., gUndoManager->Set(..., 0)) will force
+		  a menu rebuild.
+
+		  Also note that this invalidates some of the programmer's guide. Since it's
+		  so long, and probably needed (extensive) reformatting, I didn't want to
+		  force another revision on the codeguru guys.
+
+		* Removed the const declaration and changed the name of the default
+		  notification callback to gUMDefaultNotifier. It still defaults to
+		  UMCmdTargetNotifier but you can set it to something else if you want
+		  all action targets to use that routine. You would do this in your
+		  application 
+
+		* Removed some experimental code in CRicherEditView and CUndoManager. The
+		  OLE drag & drop stuff (obviously) doesn't work; the class CUndoManagerData
+		  was never used but was (part of) an attempt to use MFC's command routing.
+		  Never panned out.
+
+		* Added parentheses around the #defines within UMResources.h header file.
+		  Without these, you get lots of interesting parses :( (of course)
+
+		* One feature not noted is that you can undo/redo after saving a document
+		  correctly. If you save, then undo, the document is dirtied and closing
+		  will prompt the user. If you redo, the document is marked clean and a
+		  prompt will not be presented upon closing.
+
+		* Noted another "UM: To Do" in wordpdoc.cpp which notifies the undo
+		  manager that the document has been saved, i.e., the call to
+		  gUndoManager->TargetCleaned() in CWordPadDoc::DoSave().
+
+		* I'm considering adding user-defined data (a cookie) to the notification
+		  data that's sent in a callback. Alternatively, perhaps the callbacks should
+		  be transformed into tru adapter classes, which you can then extend in any
+		  way you like. I'm interested in feedback if anyone cares to share.
+
+1.0.1:
+		* Fixed forward delete bug in CBetterEditView (already corrected in
+		  CRicherEditView); if you forward deleted some text, followed by
+		  typing regular characters, the undo operation didn't save those
+		  characters correctly so you couldn't undo then redo.
+
+		* Fixed a crasher in the CRicherEditView's Replace All action when
+		  undoing (already corrected in CBetterEditView's version); previously
+		  I used a list but switched to a vector for space considerations; in
+		  doing so, I screwed up the increment of the iterator and apparently,
+		  forgot to test the undo part (!) when testing this change, sorry.
+		  Both replace all actions now maintain the previous selection when
+		  undoing/redoing, where before they selected the first word replaced.
+
+		* Backspacing at the beginning of a text view or forward deleting
+		  at the end no longer creates a typing action; undo/redo would be
+		  enabled yet would do nothing; harmless but confusing
+
+		* Backspacing now creates a new typing action, though a series of
+		  backspaces or backspacing followed by normal characters is considered
+		  a single action; previously, if you typed some characters, followed
+		  immediately by backspacing over them, a single action with an empty
+		  after state was created. While technically correct, at least according
+		  to the previous definition of a single typing action, this might be
+		  surprising to a user.
+
+		* Forgot to comment some utility data structures and parts of class
+		  CBetterEditView; I especially want to communicate my motivation for
+		  certain design choices (e.g., tables vs RTF) and to detail how
+		  typing is handled, especially at the level of individual characters.
+
+		* Uncommented the #ifdef APSTUDIO_INVOKED ... #endif in UndoManager.rc;
+		  you should not need to edit this file, but if you do, you must edit it
+		  by hand; AppStudio will change it otherwise; I had commented it out so
+		  I could edit the .rc file in the "original" project and forgot to undo!
+
+		* The IDS_XXX_ACTION resource strings and related commands are now defined
+		  with a base definition plus an offset; to change the id range, just
+		  change the base #define; also added more #ifndef ... #endif around the
+		  commands, in case they were already partially defined.
+
+1.0:
+		* Initial release; supports undo/redo for typing, edit operations like
+		  cut & paste, and replace actions in both CBetterEditView and
+		  CRicherEditView; also supports undo/redo for text styling, paragraph
+		  styling, bulleting, and OLE object insertion in CRicherEditView;
+		  WordPad example adds undo/redo for insert data/time

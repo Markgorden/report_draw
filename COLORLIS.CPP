@@ -478,7 +478,8 @@ void gDrawArrowHead(int arrowType,
 		POINT p;
 		p.x=(p1.x+p2.x)/2;
 		p.y=(p1.y+p2.y)/2;
-        long r = 0;//(long)sqrt((p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y))/2+1;
+        //long r = 0;//(long)sqrt((p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y))/2+1;
+		long r = (long)sqrt((double)((p1.x-p2.x)*(p1.x-p2.x)+(p1.y-p2.y)*(p1.y-p2.y)))/2+1;
 		CRect circleRect;
 		circleRect.left=p.x-r;
 		circleRect.right=p.x+r;

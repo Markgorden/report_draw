@@ -199,7 +199,7 @@ void CDrawObj::Remove()
 void CDrawObj::Draw(CDC*)
 {
 }
-
+#define PANESIZE 6
 void CDrawObj::DrawTracker(CDC* pDC, TrackerState state)
 {
 	ASSERT_VALID(this);
@@ -216,7 +216,8 @@ void CDrawObj::DrawTracker(CDC* pDC, TrackerState state)
 			for (int nHandle = 1; nHandle <= nHandleCount; nHandle += 1)
 			{
 				CPoint handle = GetHandle(nHandle);
-				pDC->PatBlt(handle.x - 3, handle.y - 3, 7, 7, DSTINVERT);
+				//pDC->PatBlt(handle.x - 3, handle.y - 3, 7, 7, DSTINVERT);
+				pDC->Rectangle(handle.x - PANESIZE, handle.y - PANESIZE, handle.x + PANESIZE, handle.y + PANESIZE);
 			}
 		}
 		break;

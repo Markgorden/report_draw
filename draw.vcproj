@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="Draw"
 	ProjectGUID="{788C7B9E-0FEC-48CC-BB0D-26025FEBE38F}"
+	RootNamespace="Draw"
 	Keyword="MFCProj"
 	TargetFrameworkVersion="0"
 	>
@@ -1183,11 +1184,11 @@
 				>
 			</File>
 			<File
-				RelativePath="res\cursor1.cur"
+				RelativePath="cursor1.cur"
 				>
 			</File>
 			<File
-				RelativePath="cursor1.cur"
+				RelativePath="res\cursor1.cur"
 				>
 			</File>
 			<File
@@ -1301,5 +1302,9 @@
 		</File>
 	</Files>
 	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="Draw.rc"
+		/>
 	</Globals>
 </VisualStudioProject>

@@ -31,6 +31,9 @@ static CZoomTool		zoomTool;
 static CCurveTool		curveTool;
 static CScribbleTool	scribbleTool;
 static CClosedCurveTool closedcurveTool;
+static CDataTool dataTool;
+static CImageTool imageTool;
+static CGridTool gridTool;
 CPoint CDrawTool::c_down;
 UINT CDrawTool::c_nDownFlags;
 CPoint CDrawTool::c_last;
@@ -677,7 +680,10 @@ void CTextTool::OnLButtonDown(CNetworkView* pView, UINT nFlags, const CPoint& po
 	pView->lastAction->Do();
 	pView->lastAction->Finish(); //unlike other CDrawObj, adding a text is onetime action
 
-	pObj->Invalidate();  //redraw it
+	// zxl 2016.10.7 注释这条，不然会提示add new page的错误。
+	//pObj->Invalidate();  //redraw it
+
+
 //	pObj->m_pDocument->SetModifiedFlag();
 //change to seletTool
 	c_drawShape = selection;

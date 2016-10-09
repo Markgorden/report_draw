@@ -59,6 +59,7 @@ BEGIN_MESSAGE_MAP(CTextProperty, CPropertyPage)
 	//{{AFX_MSG_MAP(CTextProperty)
 	ON_BN_CLICKED(IDC_FONT, OnFont)
 	//}}AFX_MSG_MAP
+	ON_EN_CHANGE(IDC_TEXT_INPUT, &CTextProperty::OnEnChangeTextInput)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -111,4 +112,14 @@ BOOL CTextProperty::OnInitDialog()
 
 	return TRUE;  // return TRUE unless you set the focus to a control
 	              // EXCEPTION: OCX Property Pages should return FALSE
+}
+
+void CTextProperty::OnEnChangeTextInput()
+{
+	// TODO:  如果该控件是 RICHEDIT 控件，则它将不会
+	// 发送该通知，除非重写 CPropertyPage::OnInitDialog()
+	// 函数并调用 CRichEditCtrl().SetEventMask()，
+	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。
+
+	// TODO:  在此添加控件通知处理程序代码
 }
